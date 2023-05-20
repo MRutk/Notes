@@ -1,0 +1,8 @@
+
+ to initialize repository: git init [repository name]
+ git init will create a directory with the repository name
+ 
+ .git directory contains all info that makes it a repository
+ 
+ 
+ 
