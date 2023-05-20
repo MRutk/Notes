@@ -1,8 +1,17 @@
 
+ 
  to initialize repository: git init [repository name]
  git init will create a directory with the repository name
  
  .git directory contains all info that makes it a repository
  
+ git status - returns repository status, usable in repository directory
+ 	show files that changed since last commit
+ 
+ git add - adding files to version controll/repo at least the local one 
  
  
+ git config --global user.name "name" - ustablishing a system wide name of contributor
+ 
+ git config --global user.email "email@mail" - ustablishing a system wide email of contributor
+  
