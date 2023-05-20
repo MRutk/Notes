@@ -1,4 +1,4 @@
-
+notes of git essentials from learnlinuxtv
  
  to initialize repository: git init [repository name]
  git init will create a directory with the repository name
@@ -14,4 +14,28 @@
  git config --global user.name "name" - ustablishing a system wide name of contributor
  
  git config --global user.email "email@mail" - ustablishing a system wide email of contributor
+ 
+git diff [filename] - shows what changed in file since last commit
+
+git commit -m "mesage goes here" - to commit
+running without -m would bring up a text editor for commit message
+
+git log --oneline - shows log of commits, displaying each commit as one line
+ and shows each commits hashcode
+ 
+git revert [hashcode] - reverts changes to previous commit, we're not inputing the hash of the commit we want to 'go' to, we are reverting a commit so the hash inputed needs to be 1 'above'.
+
+git clone [https or shh here] - clones a remote repository to local storage, better not to call this from an existing repo
+
+git remote add origin [https or ssh here] - adds an origin to the remote repo, usable when remote repo was created after local repo (remote repo becomes main
+
+git push origin master - push from origin to master/main (pushes to remote)
+(on newer versions master is not used, main would be the correct terminology)
+
+-----------------------------------------------------------
+
+
+
+
+ 
   
