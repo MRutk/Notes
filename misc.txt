@@ -1,0 +1,6 @@
+various commands
+
+currently recommended ssh key generation: <ssh-keygen -t ed25519 -a 100>
+
+for access to github they recommend to password protect and generate:
+ <ssh-keygen -t ed25519 -C "your_email@example.com">
