@@ -1,0 +1,59 @@
+notes for bash scripting course from learnlinuxtv
+
+---------basics-----------
+echo $SHELL - if not shure which shell is currently operating this will printout
+the current shell
+
+which bash - if unsure this will show where bash interpreter is located 
+
+theoreticaly a bash script is any text file with one or more commads written in it
+
+saving script file with .sh extension is not required but will make life easier and is the standard practice
+
+to execute script first it needs to be executable 
+so either chmod +x [file], chmod -o +x [file], or go with absolutes like
+chmod 764 [file]
+
+every script should start with a 'binbash' <#!/bin.bash> to ensure the sript is using the intended interpreter
+
+-----variables----
+echo "string" - will print string
+echo $variable_name - will print variable contents/value
+
+in order to reference a variable we need to put a $ in front: <$variable_name>
+(a 'neat' way of ensuring variables do not collide with command names)
+
+using "" will ensure that specified variable names(preceded by $) in string will 
+output variables value (echo "$variable_name" ----> variable_value)
+using '' will interpret the string literaly (echo '$variable_name' ---> $variable_name)
+
+declared variables dont persist through sessions
+
+$(command)-subshell, can be assigned to a variable <variable_name=$(command)>
+so a commands output can be easily save to a variable
+
+a variable with name in allcaps is usually a system variable, custom variables should be named with lowercase names that is the standard practice so it is safe to asume variables with allcaps are system variables 
+
+typing <env> will print out environment(system) variables in current session 
+
+-------basic math-----
+
+<expr> - evaluate expression allows for math operations within bash 
+remember to add spaces b/w values and operands
+multiplying needs an escape out ("\") before "*"
+backslash "\" enables to escape out of a predefined/special character
+
+operating with variables is ofcourse allowed but as before we need to use $variable_name to reference that variables value
+
+------------if statements-------------------
+
+
+
+
+
+
+
+
+
+
+
