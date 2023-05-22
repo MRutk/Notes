@@ -32,6 +32,8 @@ git remote add origin [https or ssh here] - adds an origin to the remote repo, u
 git push origin master - push from origin to master/main (pushes to remote)
 (on newer versions master is not used, main would be the correct terminology)
 
+git pull - updates local repository with changes from main
+
 -----------------------------------------------------------
 
 
