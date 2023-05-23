@@ -11,7 +11,7 @@ theoreticaly a bash script is any text file with one or more commads written in 
 saving script file with .sh extension is not required but will make life easier and is the standard practice
 
 to execute script first it needs to be executable 
-so either chmod +x [file], chmod -o +x [file], or go with absolutes like
+so either chmod +x [file], chmod -u +x [file], or go with absolutes like
 chmod 764 [file]
 
 every script should start with a 'binbash' <#!/bin.bash> to ensure the sript is using the intended interpreter
