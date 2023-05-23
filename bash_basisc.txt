@@ -32,7 +32,8 @@ declared variables dont persist through sessions
 $(command)-subshell, can be assigned to a variable <variable_name=$(command)>
 so a commands output can be easily save to a variable
 
-a variable with name in allcaps is usually a system variable, custom variables should be named with lowercase names that is the standard practice so it is safe to asume variables with allcaps are system variables 
+a variable with name in allcaps is usually a system variable, custom variables should be named with lowercase names 
+that is the standard practice so it is safe to asume variables with allcaps are system variables 
 
 typing <env> will print out environment(system) variables in current session 
 
