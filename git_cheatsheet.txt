@@ -1,0 +1,43 @@
+----Creating repo----
+Git init
+git clone <url>
+----Git config----
+git config --global user.name "name"	-sets username
+git config --global user.email "mail"	-sets email
+----Checking repo status----
+git status 
+git diff [HEAD]		- disp. changes b/w HEAD and state of working tree
+git diff <commit>	- disp. changes b/w given commit and state of working tree
+git diff <commit1> <commit2>	-disp. changes b/w given commits
+git log			-show commit history of branch
+git lop -p <file>	-show change history of file
+----Commiting changes----
+git add .		-add(stage) all changes
+git add <path>		-adds all changes in path
+git rm --cached <path>	-unstage bahnges in path
+git commit		-commits all staged changes
+git commit -m "message"	-as before but gets rid of adding commit message in text edditor
+git commit --amend	-all staged changes get added to last commit
+----Sync w remote repos----
+git fetch		-downloads things like branches and tags from remote
+git pull		-fetches and integrates changes from remote repo
+git push		-pushes local changes into remote repo
+----Rewriting history----
+git reset --hard [HEAD]		-discards local changes
+git checkout [HEAD] <file>	-discards local changes in specified file
+git reset <commit>		-resets Head pointer to specified commit and preserves changes as unstaged changes
+git reset --hard <commit>	-resers head pointer to given commit and removes changes
+----Branches----
+git branch -a				-list all branches, both local and remote
+git branch -r				-will lsit all remote branches
+git branch <branch>			-creates a new branch
+git checkout <branch>			-switches HEAD to given branch
+git checkout -b <branch>		-creates new branch and switches HEAD to it
+git branch -d <branch>			-deletes a branch localy
+git push origin --delete <branch>	-deletes remote branch
+----Syncing b/w branches----
+git merge <branch>	-merges stated branch into current branch
+git rebase <branch>	-rebases current branch onto stated branch
+git rebase --continue	-to continue a rebase after conflicts are resolved
+git rebase --abort	-aborts the rebase and resets HEAD to original branch
+-----------------------------
