@@ -14,7 +14,7 @@ git lop -p <file>			-show change history of file
 ----Commiting changes----
 git add .				-add(stage) all changes
 git add <path>				-adds all changes in path
-git rm --cached <path>			-unstage bahnges in path
+git rm --cached <path>			-unstage changes in path
 git commit				-commits all staged changes
 git commit -m "message"			-as before but gets rid of adding commit message in text edditor
 git commit --amend			-all staged changes get added to last commit
@@ -26,7 +26,7 @@ git push				-pushes local changes into remote repo
 git reset --hard [HEAD]			-discards local changes
 git checkout [HEAD] <file>		-discards local changes in specified file
 git reset <commit>			-resets Head pointer to specified commit and preserves changes as unstaged changes
-git reset --hard <commit>		-resets head pointer to given commit and removes changes
+git reset --hard <commit>		-resets Head pointer to given commit and removes changes
 ----Branches----
 git branch -a				-list all branches, both local and remote
 git branch -r				-will lsit all remote branches
