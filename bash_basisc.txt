@@ -1,6 +1,7 @@
 notes for bash scripting course from learnlinuxtv
 
 ---------basics-----------
+
 echo $SHELL - if not shure which shell is currently operating this will printout
 the current shell
 
@@ -14,9 +15,10 @@ to execute script first it needs to be executable
 so either chmod +x [file], chmod -u +x [file], or go with absolutes like
 chmod 764 [file]
 
-every script should start with a 'binbash' <#!/bin.bash> to ensure the sript is using the intended interpreter
+every script should start with a 'binbash' <#!/bin/bash> to ensure the sript is using the intended interpreter
 
 -----variables----
+
 echo "string" - will print string
 echo $variable_name - will print variable contents/value
 
@@ -48,13 +50,63 @@ operating with variables is ofcourse allowed but as before we need to use $varia
 
 ------------if statements-------------------
 
+if [ statement ]
+then
+	commands here
+fi
 
+spaces b/w brackets and statement are required, indent of code block to execute aslo
+indent usually 4 spaces, tab works juust fine
 
+if [ statement ]
+then
+	commands here
+else
+	commands here2
+fi
 
+when testing for files or directories -f or -d respectively
 
+when a installing packages from bash script it's a good idea to format it 
+as following		sudo apt update && sudo apt install -y <package_name>
+(on debian based distros)
+where && ensures the second command will only run if the first one is succesfull
+install -y ensures that apts install script won't ask for confirmation
 
+if command -v $command_variable or if command -v <command_name>
+when checking command output brackets are not required I guess
+command -v will check for a commands existence and output location 
 
+in a if statement if we are using brackets [] bash will asume the use of the test command
+so [ statement ] = test statement
 
+--------------Exit codes--------------------
+
+echo $? - will show the exit code of preceding command
+
+0 - command was successful
+anything else than '0' indicates failure
+
+when checking if the command was successful it's a good idea to pipe (>>) to some form 
+of a log file
+
+when checking for exit codes it's recommended to test echo $? placement 
+and simulate a failure to confirm.
+
+exit <number> -will change exit code to given number and exit the script
+will allow for 'granular' controll of script when paired with a log file.
+So it'll look something like this:
+
+if [ statement ]
+then
+        commands here
+	success message
+	exit 0
+else
+        commands here2
+	failure message
+	exit custom_exit_number
+fi
 
 
 

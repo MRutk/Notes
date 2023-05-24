@@ -6,3 +6,7 @@ for access to github they recommend to password protect and generate:
  <ssh-keygen -t ed25519 -C "your_email@example.com">
  
  Keys will be generated with 600 permissions I believe 400 is the recommended permission level
+--------------------
+in pop!os nano ctrl+t and ctrl+z will send it to background, fg to recall
+--------------------
+
